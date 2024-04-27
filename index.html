@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="n">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+
+
+    <!---------photos description style-------------->
+    <style>
+        /* Add your CSS styles here */
+        .description-container {
+            position: relative;
+        }
+
+        .description {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(195, 250, 204, 0.7); /* Adjust the background color and opacity */
+            color: rgb(2, 43, 2);
+            padding: 10px;
+            display: none;
+            width: 100%; /* Make description cover the entire image */
+            text-align: center; /* Center align text */
+            font-style: italic; 
+            font-weight: bold;
+        }
+    </style>
+
+
+
+<!-----------------style for white name------------------>
+    <style>
+        /* Style the links */
+        a {
+            color: rgb(186, 218, 186); /* Set text color to  */
+            text-decoration: none; /* Remove underline */
+        }
+
+        /* Style the links when hovered over */
+        a:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+        
+        /* Style the icons */
+        .flower1, .flower2, .icon1 {
+            color: black; /* Set icon color to black */
+            margin-right: 5px; /* Add space between icon and text */
+        }
+    </style>
+
+<!---------myself style--------------------->
+
+<style>
+    .tab-contents {
+        display: flex;
+        justify-content: space-between;
+    }
+    .video-container {
+        width: 50%;
+        padding-right: 20px;
+    }
+    .bullets {
+        width: 50%;
+        padding-left: 20px;
+    }
+    .bullets ul {
+        list-style: none;
+        padding: 0;
+    }
+    .bullets ul li {
+        margin-bottom: 10px;
+    }
+</style>
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="" class="logo">
+
+            <ul id="sidemenu" class="fixed-menu" style= "font-size: 30px;">
+                <li><a href="#header">🌳Home</a></li>
+                <li><a href="#about">🌲About</a></li>
+                <li><a href="#photos">🎍Photos</a></li>
+                <li><a href="#contact">🌴Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text right-align">
+            <h1 style="font-size: 85px; font-style: italic; font-weight: bold; margin-left: 355px; margin-top: -105px;">
+                <br><span>"</span>There is <span>always</span> another way<span>"</span></h1>
+                <br>
+                <p style="font-size: 17px; text-align: center; font-style: italic; margin-left: 350px; 
+                margin-top: -10px; color: rgb(21, 46, 21); font-weight: bolder;">
+                    This is Dea Lyca Juyamao, 2nd year, Bachelor of Science in Information Technology <br>
+                    section A. Welcome to this little world where I get to brag a bit about myself, where I <br>
+                    showcase the things I've done in life, my achievements, skills I've mastered. It's all <br>
+                     about me, what I am, who I am, and what I've become. The purpose of this website is <br>
+                     to attract like-minded individuals, potential colaborators,
+                    or employers who <br>appreciate what I have to offer and share similar interests or goals.
+                </p>
+                
+                
+        </div> 
+        </div> 
+    </div>
+</div>
+
+
+
+<!-- ----------about--------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/aboutme.jpg" style="margin-bottom: 20px; margin-top: 20px;">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title" style="font-size: 45px; margin-bottom: -3px; margin-top: 12px; color: #c0fdc0;">About Me</h1>
+                <p style="margin-top: 1%; color: #9caf9c;"><br>Hi there! I'm currently pursuing a BSIT degree, 
+                    driven by my passion for web development. I've been recognized with awards 
+                    throughout school and graduated with honors in senior high. In sports, I've 
+                    excelled as a swimmer, winning gold medals in backstroke and butterfly events, 
+                    and my first sport was volleyball. I love editing, though I'm not that professional 
+                    yet, and I enjoy writing stories and poetries. Now, I'm diving into the tech world, 
+                    aiming to become a skilled web developer someday.</p>
+                
+                <div class="tab-titles" style="color: #adcaad;">
+                    <p class="tab-links active-link" onclick="opentab('myself')" style="font-size: 16px; ">More About Myself</p>
+                    <p class="tab-links" onclick="opentab('education')" style="font-size: 16px; ">Education</p>
+                    <p class="tab-links" onclick="opentab('skills')" style="font-size: 16px; ">Skills</p>
+                    <p class="tab-links" onclick="opentab('hobbies')"style="font-size: 16px; ">Hobbies</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="myself">
+    <div class="images-container">
+        <div class="image-column">
+            <video width="260" height="300" controls style="margin-left: 320px; margin-top: -70px;">
+                <source src="deavid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="bullets">
+        <ul style="margin-top: -260px; margin-left: -20px; color: rgb(183, 190, 183); font-size: 15px;" >
+            <li>🌲My aim is to establish myself as a proficient web developer, 
+                merging technical skills with design expertise. </li>
+            <li>🌲Drawing from the discipline of ROTC Army, the resilience 
+                learned in swimming, and the teamwork skills from volleyball, 
+                I aspire to create impactful digital solutions and collaborate
+                 effectively.</li>
+            <li>🌲Additionally, my passion for editing and writing 
+                stories enriches my approach, infusing creativity into web development. </li>
+           
+        </ul>
+    </div>
+</div>
+
+                <div class="tab-contents" id="education">
+                    <div class="images-container">
+                        <div class="image-column">
+                            <img src="images/elementary.jpg">
+                            <p style="color: rgb(200, 228, 200);">Elementary</p>
+                        </div>
+                        <div class="image-column">
+                            <img src="images/high school.jpg">
+                            <p style="color: rgb(200, 228, 200);">Senior High School</p>
+                        </div>
+                        <div class="image-column">
+                            <img src="images/college.jpg">
+                            <p style="color: rgb(200, 228, 200);">College</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <div class="images-container">
+                        <div class="image-column">
+                            <img src="images/editing.jpg">
+                            <p style="color: rgb(200, 228, 200);">Editing: Multimedia Skills</p>
+                        </div>
+                        <div class="image-column">
+                            <img src="images/writing.jpg">
+                            <p style="color: rgb(200, 228, 200);">Writing: Creative Expression</p>
+                        </div>
+                        <div class="image-column">
+                            <img src="images/ps.jpg">
+                            <p style="color: rgb(200, 228, 200);">Problem Solving</p>
+                        </div>
+                    </div>
+                    <ul>
+                       <li></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="hobbies">
+                    <div class="images-container">
+                        <div class="image-column">
+                            <img src="images/drawing.jpg">
+                            <p style="color: rgb(200, 228, 200);">Drawing</p>
+                        </div>
+                        <div class="image-column">
+                            <img src="images/gaming.jpg">
+                            <p style="color: rgb(200, 228, 200);">Gaming</p>
+                        </div>
+                        <div class="image-column">
+                            <img src="images/reading.jpg">
+                            <p style="color: rgb(200, 228, 200);">Writing & Reading</p>
+                        </div>
+                    </div>
+                    <ul>
+                       <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--------------------photos------------------>
+
+<div id="photos">
+    <h1>PHOTOS</h1>
+    <h4 style="text-align: center; margin-bottom: 20px; color: #729672;">click every photo to see description</h4>
+    <div class="container">
+        <div class="row">
+            <div class="photos-col">
+                <div class="image-container">
+                    <div class="description-container">
+                        <div class="description" id="description1"></div>
+                        <img src="images/1.jpg" alt="Photo 1" onclick="showDescription('juyamao family', 'description1')">
+                    </div>
+                </div>
+                <div class="image-container">
+                    <div class="description-container">
+                        <div class="description" id="description2"></div>
+                        <img src="images/2.jpg" alt="Photo 2" onclick="showDescription('my lola and me', 'description2')">
+                    </div>
+                </div>
+            </div>
+            <div class="photos-col">
+                <div class="image-container">
+                    <div class="description-container">
+                        <div class="description" id="description3"></div>
+                        <img src="images/3.jpg" alt="Photo 3" onclick="showDescription('bestfriends since grade 8', 'description3')">
+                    </div>
+                </div>
+                <div class="image-container">
+                    <div class="description-container">
+                        <div class="description" id="description4"></div>
+                        <img src="images/4.jpg" alt="Photo 4" onclick="showDescription('shs graduation with papa', 'description4')">
+                    </div>
+                </div>
+            </div>
+            <div class="photos-col">
+                <div class="image-container">
+                    <div class="description-container">
+                        <div class="description" id="description5"></div>
+                        <img src="images/5.jpg" alt="Photo 5" onclick="showDescription('nwssu army rotc days', 'description5')">
+                    </div>
+                </div>
+                <div class="image-container">
+                    <div class="description-container">
+                        <div class="description" id="description6"></div>
+                        <img src="images/6.jpg" alt="Photo 6" onclick="showDescription('kinder days: pabida days', 'description6')">
+                    </div>
+                </div>
+            </div>
+            <div class="photos-col">
+                <div class="image-container">
+                    <div class="description-container">
+                        <div class="description" id="description7"></div>
+                        <img src="images/7.jpg" alt="Photo 7" onclick="showDescription('i forgot when was this taken but i still remember the phone i used was from my mama, the keypad samsung cp that lasted for 7 years', 'description7')">
+                    </div>
+                </div>
+                <div class="image-container">
+                    <div class="description-container">
+                        <div class="description" id="description8"></div>
+                        <img src="images/8.jpg" alt="Photo 8" onclick="showDescription('pabida days: this was when i was grade 5 in my titas place in catarman, salhag. i miss them', 'description8')">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--------------------contact------------------>
+
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="centered-content">
+            <div class="contact-col-2"> 
+                <div>
+                    <img src="images/contact-user.jpg" style="border-radius: 50%; width: 57mm; height: 57mm; margin-bottom: -0px;">
+                
+                </div>
+                
+                <h1 class="sub-title" style="font-size: 35px; margin-top: 8px;">Contact Me <br></h1>
+                <p class="social-links" style="margin-top: 1px; line-height: 0.8;">
+                    <a href="mailto:dealycajuyamao@gmail.com" ><span class="flower1">&#x1F33C;</span> email: dljuy@gmail.com</a> <br>
+                    <a href="https://www.facebook.com/dea.juyamao" target="_blank" ><span class="flower2">&#x1F490;</span>facebook: deajuyamao</a> <br>
+                    <a href="https://www.instagram.com/dyly_dyl?igsh=MXBvajg0dTluN3JoMA==" target="_blank" ><span class="icon1">&#x1F33E;</span> instagram: dyly_dyl</a><br>
+                    <a href="https://github.com/dylydyl" ><span class="flower1">&#x1F33F;</span> github: dylydyl</a> <br>
+                    
+                </p>
+                
+                
+
+            </div>
+
+            
+            <div class="contact-col-3"> 
+                <section class="contact-form">
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" name="Name" placeholder="full name" required>
+                            <input type="email" name="Email" placeholder="email" required>
+                        </div>
+                        <textarea name="Message" id="message" cols="30" rows="10" placeholder="your message"></textarea>
+                        <input type="submit" value="send message" style="font-size: 15px; color: #023f02; background-color: #c2ebc2; border-radius: 5px;">
+                    </form>
+                </section>
+            </div>
+               
+
+            
+
+
+
+
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-------------JAVASCRIPT------------>
+<script>
+
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     } 
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+
+<!--------photo description javascript------------------->
+<script>
+    function showDescription(description, id) {
+        var descriptionText = document.getElementById(id);
+        if (descriptionText.style.display === 'block') {
+            descriptionText.style.display = 'none'; // Hide the description if it's already displayed
+        } else {
+            descriptionText.textContent = description;
+            descriptionText.style.display = 'block'; // Show the description if it's hidden
+        }
+    }
+</script>
+
+</body>
+</html>

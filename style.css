@@ -1,0 +1,469 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Sans-serif;
+    box-sizing: border-box; 
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+
+body{
+     background: rgb(10, 32, 1);
+     color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+    .right-align {
+        text-align: right;
+    }
+}
+.container{
+    padding: 10px 10%;
+}
+
+
+/*-------------HOME,ABOUT, PHOTOS. ETC.-------------*/
+
+.fixed-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 20px 10%;
+    background: transparent;
+    /* backdrop-filter: blur(10px); */ /* Remove this line to remove the blur effect */
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    z-index: 999;
+}
+
+
+
+.fixed-menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.fixed-menu li:last-child {
+    margin-right: 0;
+}
+
+.fixed-menu a {
+    color: rgb(223, 255, 225); /* Adjust text color as needed */
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.fixed-menu a:hover {
+    color: rgb(192, 235, 192); /* Adjust hover color as needed */
+}
+
+
+
+/*-----------------------*/
+
+
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 50px;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: rgb(58, 88, 6);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+    color: rgb(209, 255, 209);
+}
+.header-text h1 span{
+    color: rgb(25, 37, 3);
+}
+
+
+
+
+
+
+/* -----------about---------------- */
+
+#about{
+    padding: 53px 0;
+    color: rgb(126, 146, 126);
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+    margin-right: 25px;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+
+
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: darkgreen;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: rgb(88, 95, 88);
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.image-column {
+    flex-basis: 30%;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.image-column img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.image-column p {
+    font-size: 14px;
+    color: rgb(156, 177, 156);
+}
+
+
+
+
+
+
+
+/* -----------------------photos-------------*/
+
+#photos {
+    padding: 69px 0;
+    color: #ababab;
+    background-color: rgb(11, 39, 11);
+    background-size: cover;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.photos-col {
+    flex-basis: 23%; /* Adjust the width based on the space needed */
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    
+}
+
+h1 {
+    text-align: center;
+    color: rgb(218, 255, 218); /* Changing text color to green */
+    margin-bottom: 8px;
+    margin-top: -5px;
+    font-size: 40px;
+   
+  }
+
+ 
+
+.image-container {
+    overflow: hidden;
+    margin-bottom: 25px; /* Adjust the space between images */
+    width: 90%; /* Set the width to fill the container */
+    height: 180px; /* Set the desired height */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%; /* Ensure the image fills the container */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------contact------------*/
+
+#contact {
+    padding: 105px 0;
+    color: #ababab;
+    background-color: rgb(9, 54, 9);
+    background-size: cover;
+}
+
+.profile-image img {
+    max-width: 50px; /* Adjust the maximum width as needed */
+    border-radius: 50%;
+}
+
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-col-1,
+.contact-col-2,
+.contact-col-3 {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.contact-col-1 {
+    order: 1; /* Change order to 1 */
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-col-2 {
+    margin: 0 150px; /* Adjust margin as needed */
+    text-align: center;
+}
+
+
+
+.contact-col-2 {
+    order: 2; /* Change order to 2 */
+}
+
+.contact-col-3 {
+    order: 3; /* Change order to 3 */
+}
+
+.sub-title {
+    font-size: 30px; /* Adjust font size as needed */
+    font-weight: 600;
+    margin-bottom: 10px; /* Add some bottom margin to separate it from the social links */
+}
+
+
+.social-links {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: -90px;
+    margin-right: 1px;
+    display: flex; /* Use flexbox to align items horizontally */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.social-links a {
+    margin-bottom: 1px; /* Add some bottom margin to separate the links */
+}
+
+
+
+.contact-form {
+    text-align: center;
+}
+
+.contact-form form {
+    max-width: 20em;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+.contact-form form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea {
+    width: 90%;
+    padding: 0.7em;
+    font-size: 16px;
+    color: rgb(1, 54, 1);
+    background: rgb(200, 241, 200);
+    border-radius: .6rem;
+    margin: 0.7rem 0;
+    resize: none;
+}
+
+
+.social-links {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*----------css for small screens---------*/
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/phonebg.jpg);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: rgb(2, 34, 2);
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+}
+
